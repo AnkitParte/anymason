@@ -1,0 +1,65 @@
+.demoOne {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.cardOne {
+    border: 3px solid black;
+    border-radius: 6px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardOne:hover {
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    transform: scale(1.02);
+}
+
+/* this will make lines limited */
+.limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* these lines helps to make transparent + background blur */
+.bgBlur {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+/* this css puts gradient to fonts */
+.textGradient{
+    font-size: 8rem;
+    background: linear-gradient(to right,navy,lightblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* 
+box-sizing: border-box;
+The width and height properties (and min/max properties) includes content, padding and border
+ */
+
+ .box{
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+    min-width: 10rem;
+    min-height: 10rem;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px black;
+}
